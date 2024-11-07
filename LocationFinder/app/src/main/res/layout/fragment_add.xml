@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarContainer">
+
+
+        <TextView
+            android:id="@+id/addressHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textSize="@dimen/header_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/streetAddressInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="street-address"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/address"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/latHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lat_header"
+            android:textSize="@dimen/header_2"/>
+
+        <EditText
+            android:id="@+id/latInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/lat_header"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/longHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/long_header"
+            android:textSize="@dimen/header_2"/>
+
+        <EditText
+            android:id="@+id/longInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/long_header"
+            android:layout_marginBottom="25dp"/>
+
+
+        <TextView
+            android:id="@+id/removeUpdateMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_update_msg"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_marginBottom="25dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addDeleteBtns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_btn"
+                android:backgroundTint="@color/secondary_color"
+                tools:layout_editor_absoluteX="137dp"
+                tools:layout_editor_absoluteY="245dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/deleteBtn"/>
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_btn"
+                android:backgroundTint="@color/secondary_color"
+                tools:layout_editor_absoluteX="137dp"
+                tools:layout_editor_absoluteY="245dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/addBtn"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/addDeleteBtns"
+            android:layout_marginBottom="25dp">
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_btn"
+                android:backgroundTint="@color/secondary_color"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/backBtn"/>
+
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back_btn"
+                android:backgroundTint="@color/secondary_color"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/updateBtn"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/suggestedHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/suggested_results"
+            android:textSize="@dimen/header_2"
+            android:gravity="center"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:id="@+id/suggestedResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_recent"
+                android:gravity="center"
+                android:textSize="@dimen/regular_font_size"/>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

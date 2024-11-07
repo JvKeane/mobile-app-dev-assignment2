@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LocationFinder</string>
+    <string name="app_title">Location Finder</string>
+    <string name="welcome_msg">Welcome to the Location Finder app!!</string>
+    <string name="remove_update_msg">To remove or update data please provide a valid street
+        address exactly as you see it in the suggested box</string>
+    <string name="search">Search</string>
+    <string name="submit_btn">Submit</string>
+    <string name="edit_btn">Edit</string>
+    <string name="add_btn">Add</string>
+    <string name="delete_btn">Delete</string>
+    <string name="update_btn">Update</string>
+    <string name="save_btn">Save</string>
+    <string name="back_btn">Back</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="suggested_searches">Suggested Searches</string>
+    <string name="suggested_results">Suggested Results</string>
+    <string name="search_results">Search Results</string>
+    <string name="no_recent">Nothing to see here…</string>
+    <string name="latlong_header">Latitude and Longitude</string>
+    <string name="lat_header">Latitude</string>
+    <string name="long_header">Longitude</string>
+    <string name="latlong_placeholder">Search a locations address to see its latitude and longitude.
+        The address entered for search must be complete</string>
+    <string name="address">Street Address</string>
+    <string name="placeholder">placeholder</string>
+    <string name="now_editing"><u>Now editing</u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
